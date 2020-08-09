@@ -2,6 +2,12 @@
 `shelladder` enables you to call Python functions as if they were Bash
 functions or commands.
 
+Calling `print()` in your Python function is directly sent to `stdout`. You can
+pipe input into your functions, which can read it using `sys.stdin`.
+
+Also, all the arguments are available in `sys.argv`, so you can use
+`argparse.ArgumentParser` objects directly.
+
 
 # How it works
 You begin by writing your Python functions in a module, e.g. `myfunctions.py`.
@@ -55,6 +61,8 @@ printdir
 /what/ever/your/dir/is
 ```
 
+
+# A shortcut
 Observe that `shelladder` will print the location of this companion Bash
 script, which allows you to do everything in one command:
 
