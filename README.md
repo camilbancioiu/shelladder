@@ -33,13 +33,16 @@ Once you're happy with your Python functions, save your file. For example,
 python3 /some/where/shelladder/shelladder.py addertest.py
 ```
 
-What `shelladder` does is that it creates a new folder in your `$HOME` called
+Now `shelladder` has created a new dot-folder in your `$HOME` called
 `.shelladder`, where it will deploy your `addertest.py` module (with minor
 modifications!), and it will create a companion Bash script, called
-`addertest.sh`. By sourcing `addertest.sh` into your shell, you gain access to
-all the `# export`-ed functions in `addertest.py`. Neat, right?
+`addertest.sh`.
 
-Try it:
+And by sourcing `addertest.sh` into your shell, you gain access to
+all the `# export`-ed functions in `addertest.py`. Neat, right? Take a look at
+these two generated files, to see what happened.
+
+Now try sourcing:
 
 ```
 source ~/.shelladder/addertest.sh
