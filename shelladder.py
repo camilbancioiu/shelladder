@@ -46,7 +46,7 @@ def write_sh_wrappers(output, module, functions):
     for function in functions:
         output.write("function {} {{\n".format(function))
         output.write("    python3 {} {}\n".format(module, function))
-        output.write("}")
+        output.write("}\n")
 
 
 def write_py_main(output, functions):
