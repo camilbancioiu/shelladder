@@ -33,25 +33,25 @@ the `# export` mark will remain "private" to the module, i.e. they can be
 called by other exported functions, but not from Bash.
 
 Once you're happy with your Python functions, save your file. For example,
-`addertest.py` in your current folder. Now run this command:
+`myfunctions.py` in your current folder. Now run this command:
 
 ```
-python3 /some/where/shelladder/shelladder.py addertest.py
+python3 /some/where/shelladder/shelladder.py myfunctions.py
 ```
 
 Now `shelladder` has created a new dot-folder in your `$HOME` called
-`.shelladder`, where it will deploy your `addertest.py` module (with minor
+`.shelladder`, where it will deploy your `myfunctions.py` module (with minor
 modifications!), and it will create a companion Bash script, called
-`addertest.sh`.
+`myfunctions.sh`.
 
-And by sourcing `addertest.sh` into your shell, you gain access to
-all the `# export`-ed functions in `addertest.py`. Neat, right? Take a look at
+And by sourcing `myfunctions.sh` into your shell, you gain access to
+all the `# export`-ed functions in `myfunctions.py`. Neat, right? Take a look at
 these two generated files, to see what happened.
 
 Now try sourcing:
 
 ```
-source ~/.shelladder/addertest.sh
+source ~/.shelladder/myfunctions.sh
 ```
 
 Try calling `printdir` now!
@@ -67,10 +67,10 @@ Observe that `shelladder` will print the location of this companion Bash
 script, which allows you to do everything in one command:
 
 ```
-source $(python3 /some/where/shelladder/shelladder.py addertest.py)
+source $(python3 /some/where/shelladder/shelladder.py myfunctions.py)
 ```
 
-Just make sure you run the above command everytime you edit `addertest.py`.
+Just make sure you run the above command everytime you edit `myfunctions.py`.
 
 _You need to specify the path to `shelladder.py`, because it's just a Python
 script, not an executable._ Or add an alias to `~/.bashrc`:
@@ -79,4 +79,4 @@ script, not an executable._ Or add an alias to `~/.bashrc`:
 alias adder="python3 /some/where/shelladder/shelladder.py"
 ```
 
-Now you can do `adder addertest.py` anytime, from anywhere.
+Now you can do `adder myfunctions.py` anytime, from anywhere.
