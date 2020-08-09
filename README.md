@@ -15,7 +15,6 @@ containing this:
 ```python
 import os
 
-
 # export
 def printdir():
     print(os.getcwd())
@@ -50,7 +49,7 @@ Observe that `shelladder` will print the location of this companion Bash
 script, which allows you to do everything in one command:
 
 ```
-source $(python3 shelladder.py addertest.py)
+source $(python3 /some/where/shelladder/shelladder.py addertest.py)
 ```
 
 Just make sure you run the above command everytime you edit `addertest.py`.
