@@ -45,7 +45,7 @@ def write_py_header(output):
 def write_sh_wrappers(output, module, functions):
     for function in functions:
         output.write("function {} {{\n".format(function))
-        output.write("    python3 {} {}\n".format(module, function))
+        output.write("    python3 {} {} $@\n".format(module, function))
         output.write("}\n")
 
 
