@@ -48,6 +48,13 @@ Now try sourcing:
 source ~/.shelladder/addertest.sh
 ```
 
+Try calling `printdir` now!
+
+```
+printdir
+/what/ever/your/dir/is
+```
+
 Observe that `shelladder` will print the location of this companion Bash
 script, which allows you to do everything in one command:
 
