@@ -1,6 +1,6 @@
 # Shelladder
 `shelladder` enables you to call Python functions as if they were Bash
-functions or normal commands.
+functions or commands.
 
 
 # How it works
