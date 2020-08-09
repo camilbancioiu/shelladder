@@ -79,4 +79,10 @@ script, not an executable._ Or add an alias to `~/.bashrc`:
 alias adder="python3 /some/where/shelladder/shelladder.py"
 ```
 
-Now you can do `adder myfunctions.py` anytime, from anywhere.
+Now you can do `adder myfunctions.py` anytime, from anywhere, hassle-free:
+
+```
+source $(adder myfunctions.py)
+printdir
+/what/ever/your/dir/is
+```
