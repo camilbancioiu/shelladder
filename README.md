@@ -1,4 +1,4 @@
-# Shelladder
+# Shell adder
 `shelladder` enables you to call Python functions as if they were Bash
 functions or commands.
 
@@ -7,6 +7,10 @@ pipe input into your functions, which can read it using `sys.stdin`.
 
 Also, all the arguments are available in `sys.argv`, so you can use
 `argparse.ArgumentParser` objects directly.
+
+Named after the common European adders, which have a zigzag pattern on their
+backs - just like what `shelladder` does, moving you from Bash into Python then
+back into Bash, back and forth.
 
 
 # How it works
