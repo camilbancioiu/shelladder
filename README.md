@@ -1,4 +1,4 @@
-# Shell adder
+# The shell adder
 `shelladder` enables you to call Python functions as if they were Bash
 functions or commands.
 
